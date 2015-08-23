@@ -58,8 +58,8 @@ DATABASES = {
         'NAME': 'django-class-lvl1',
         'USER': 'postgres',
         'PASSWORD': '',
-        'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'PORT': '',                      # Set to empty string for default.
+        'HOST': '',        # '127.0.0.1' for localhost through TCP.
+        'PORT': '',        # Set to empty string for default.
     }
 }
 
@@ -98,14 +98,14 @@ TEMPLATE_DIRS = (
 
 # .local.py overrides all the common settings.
 try:
-    from .local import *
+    from .local import *  # NOQA
 except ImportError:
     pass
 
 
 # importing test settings file if necessary
 if len(sys.argv) > 1 and 'test' in sys.argv[1]:
-    from .testing import *
+    from .testing import *  # NOQA
 
 # Debug toolbar
 if DEBUG:

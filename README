@@ -1,0 +1,9 @@
+Сделать просто приложение ToDo:
+
+1. Список заданий и его статус в виде checkbox-ов к ним.
+2. Добавление новых заданий и смена статуса с помощью Ajax-са.
+3. Стилизировать приложение с помощью twitter-bootstrap ( http://twitter.github.com/bootstrap/ ).
+4. Добавить User-fixture (username:admin/password:admin).
+5. Добавить логгирование запросов.
+6. python manage.py test_coverage - 100%.
+7. flake8 . - не выдает ошибок.
