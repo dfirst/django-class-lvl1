@@ -1,0 +1,6 @@
+-r testing.txt
+django-debug-toolbar
+coverage
+django-coverage
+flake8
+
